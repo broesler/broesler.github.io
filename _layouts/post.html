@@ -25,3 +25,16 @@ layout: default
   </ul>
 </div>
 {% endif %}
+
+<div class="pagination">
+  {% if page.previous %}
+    <a class="pagination-item older" href="{{ page.previous | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if page.next %}
+    <a class="pagination-item newer" href="{{ page.next | absolute_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
