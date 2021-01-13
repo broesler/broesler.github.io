@@ -21,11 +21,13 @@ author:
 # Build settings
 # theme: minima
 version: 0.0.0
-google_analytics_id: #UA-XXXX-Y
+google_analytics: #
+# google_analytics_id: #UA-XXXX-Y
 
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # Homepage options
 show_excerpts: true  # show excerpt of posts on homepage
