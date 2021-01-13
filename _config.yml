@@ -9,7 +9,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Made by <a href="https://twitter.com/BernieRoesler" target="_blank">@BernieRoesler</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-date_format: "%b %-d, %Y"
+date_format: "%B %-d, %Y"  # i.e. January 1, 2021, see `man date`
 
 author:
   name: Bernie Roesler
