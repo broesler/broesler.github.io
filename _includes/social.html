@@ -1,0 +1,37 @@
+{%- assign social = site.author.social_links -%}
+
+<div class="social-media-div">
+  {% if social.github %}
+  <a title="Github: {{ social.github | escape }}" href="https://github.com/{{ social.github }}" target="_blank">
+    <i class="fa fa-github-square fa-2x"></i>
+  </a>
+  {% endif %}
+
+  {% if social.stackoverflow %}
+  <a title="StackOverflow: {{ social.stackoverflow | escape }}" href="http://stackoverflow.com/users/{{ social.stackoverflow }}" target="_blank">
+    <i class="fa fa-stack-overflow fa-2x"></i>
+  </a>
+  {% endif %}
+
+  {% if social.twitter %}
+  <a title="Twitter: {{ social.twitter | escape }}" href="https://twitter.com/{{ social.twitter }}" target="_blank">
+    <i class="fa fa-twitter-square fa-2x"></i>
+  </a>
+  {% endif %}
+
+  {% if social.linkedin %}
+  <a title="LinkedIn: {{ social.linkedin | escape }}" href="https://www.linkedin.com/in/{{ social.linkedin }}" target="_blank">
+    <i class="fa fa-linkedin-square fa-2x"></i>
+  </a>
+  {% endif %}
+
+  <a title="Atom feed" id="atom" href="/atom.xml" target="_blank">
+    <i class="fa fa-rss-square fa-2x"></i>
+  </a>
+
+  {% if site.author.email %}
+  <a title="Email Me" href="mailto:{{ site.author.email }}">
+    <i class="fa fa-envelope fa-2x"></i>
+  </a> 
+  {% endif %}
+</div>

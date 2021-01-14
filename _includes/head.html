@@ -1,8 +1,8 @@
 <head>
   <!-- <link href="http://gmpg.org/xfn/11" rel="profile"> -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"; charset="utf-8">
   <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"> -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   {%- seo -%}
@@ -19,14 +19,18 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/poole.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/lanyon.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/solarized-light.css' | absolute_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
+  <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/assets/apple-touch-icon-precomposed.png' | absolute_url }}">
   <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | absolute_url }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+  <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
 
   {%- feed_meta -%}
