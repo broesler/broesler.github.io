@@ -28,19 +28,19 @@
     {% endfor %}
 
     <a class="sidebar-nav-item" href="{{ site.github.repository_url }}">GitHub project</a>
+
     {% if site.author.cv %}
     <a class="sidebar-nav-item" href="{{ site.author.cv }}">Curriculum Vitae</a>
     {% endif %}
   </nav>
 
-  <div class="sidebar-item">
-    <p>
-      <!-- {% comment %} Currently v{{ site.version }} <br> {% endcomment %} -->
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
-  </div>
+  <!-- <div class="sidebar-item"> -->
+    <div class="social-media-div">
+      {%- include social.html -%}
+    </div>
+  <!-- </div> -->
 
-  <div class="social-media-div">
-    {%- include social.html -%}
+  <div class="copyright-div">
+    <p>&copy; {{ site.time | date: '%Y' }} Bernard Roesler. <br> All rights reserved.</p>
   </div>
 </div>

@@ -564,57 +564,36 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-/* ---------- Copied from minima ---------- */
+/* ---------- Social Links ---------- */
 /* TODO incorporate _sass scripts and use the variables */
-
-/* minima/_sass/minima/_base.scss */
-a {
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
+.social-media-div {
+  display: table;
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
 }
 
-/* minima/_sass/minima/_layout.scss */
 .social-media-list {
   list-style: none;
-  margin-left: 0;
+  padding: 0;
 }
 
-.social-links {
-  /* @include relative-font-size(0.9375); */
-  /* color: $brand-color; */
-  font-size: 0.9375rem;
-  color: #828282;
+.social-media-list > li {
+  display: inline;
+  float: left;
+  margin-right: 12px;
+  li:last-of-type { margin-right: 0 };
 }
 
-.social-media-list {
-  display: table;
-  margin: 0 auto;
-  li {
-    float: left;
-    margin: 5px 10px 5px 0;
-    &:last-of-type { margin-right: 0 }
-    a {
-      display: block;
-      /* padding: $spacing-unit / 4; */
-      /* border: 1px solid $border-color-01; */
-      /* &:hover { border-color: $border-color-02 } */
-      padding: 30px / 4;
-      border: 10px solid lighten(#828282, 40%);
-      &:hover { background: lighten(#828282, 20%) }
-    }
-  }
+/* Copyright */
+.copyright-div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 1rem;
 }
 
-.svg-icon {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  fill: currentColor;
-  padding: 5px 3px 2px 5px;
-  vertical-align: text-bottom;
+.copyright-div > p {
+  position: absolute;
+  bottom: 0;
 }
