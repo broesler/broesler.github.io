@@ -155,7 +155,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
+  /* color: #bf616a; */
+  color: #586e75;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -370,12 +371,13 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  /* color: #268bd2; */
+  background-color: #f0f0f0;
   text-decoration: none;
 }
-.related-posts li a:hover small {
-  color: inherit;
-}
+/* .related-posts li a:hover small { */
+/*   color: inherit; */
+/* } */
 
 
 /*
