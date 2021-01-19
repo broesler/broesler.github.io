@@ -35,28 +35,25 @@
 
 @media (prefers-color-scheme dark) {
   :root {
-    /* --sol-bg:  var(--sol-base03); */
-    /* --sol-bghi:  var(--sol-base02); */
-    /* --sol-comment:  var(--sol-base01); */
-    /* --sol-body: var(--sol-base0); */
-    /* --sol-emph: var(--sol-base1); */
-    --sol-bg:  var(--sol-orange);
+    --sol-bg:  var(--sol-base03);
+    --sol-bghi:  var(--sol-base02);
+    --sol-comment:  var(--sol-base01);
+    --sol-body: var(--sol-base0);
+    --sol-emph: var(--sol-base1);
   }
 }
 
 /*  Syntax highlighting styles */
 /*  -------------------------- */
-.highlight .c     { color: var(--sol-comment); font-style: italic }  /*  Comment */
+
 .highlight .err   { color: var(--sol-red) }  /*  Error */
-.highlight .g     { color: var(--sol-comment) } /* Generic */
-.highlight .k     { color: var(--sol-emph); font-weight: bold }  /*  Keyword */
-.highlight .l     { color: var(--sol-body) } /* Literal */
-.highlight .n     { color: var(--sol-body) } /* Name */
-.highlight .o     { color: var(--sol-green); font-weight: bold }  /*  Operator */
+.highlight .p     { color: var(--sol-body) } /* Punctuation */
+.highlight .c     { color: var(--sol-comment); font-style: italic }  /*  Comment */
 .highlight .cm    { color: var(--sol-comment); font-style: italic }  /*  Comment.Multiline */
 .highlight .cp    { color: var(--sol-comment); font-weight: bold }  /*  Comment.Preproc */
 .highlight .c1    { color: var(--sol-comment); font-style: italic }  /*  Comment.Single */
 .highlight .cs    { color: var(--sol-comment); font-weight: bold; font-style: italic }  /*  Comment.Special */
+.highlight .g     { color: var(--sol-comment) } /* Generic */
 .highlight .gd    { color: var(--sol-red) }  /*  Generic.Deleted */
 .highlight .gd .x { color: var(--sol-red) }  /*  Generic.Deleted.Specific */
 .highlight .ge    { color: var(--sol-body); font-style: italic }  /*  Generic.Emph */
@@ -69,12 +66,14 @@
 .highlight .gs    { color: var(--sol-emph); font-weight: bold }  /*  Generic.Strong */
 .highlight .gu    { color: var(--sol-comment) }  /*  Generic.Subheading */
 .highlight .gt    { color: var(--sol-red) }  /*  Generic.Traceback */
-.highlight .kn    { color: var(--sol-orange) } /* Keyword.Namespace */
+.highlight .k     { color: var(--sol-emph); font-weight: bold }  /*  Keyword */
+.highlight .kn    { color: var(--sol-orange); font-weight: bold } /* Keyword.Namespace */
 .highlight .kc    { color: var(--sol-emph); font-weight: bold }  /*  Keyword.Constant */
 .highlight .kd    { color: var(--sol-emph); font-weight: bold }  /*  Keyword.Declaration */
 .highlight .kp    { color: var(--sol-emph); font-weight: bold }  /*  Keyword.Pseudo */
 .highlight .kr    { color: var(--sol-emph); font-weight: bold }  /*  Keyword.Reserved */
 .highlight .kt    { color: var(--sol-violet); font-weight: bold }  /*  Keyword.Type */
+.highlight .n     { color: var(--sol-body) } /* Name */
 .highlight .na    { color: var(--sol-cyan) }  /*  Name.Attribute */
 .highlight .nb    { color: var(--sol-blue) }  /*  Name.Builtin */
 .highlight .nc    { color: var(--sol-violet); font-weight: bold }  /*  Name.Class */
@@ -85,8 +84,10 @@
 .highlight .nn    { color: var(--sol-body) }  /*  Name.Namespace */
 .highlight .nt    { color: var(--sol-blue) }  /*  Name.Tag */
 .highlight .nv    { color: var(--sol-cyan) }  /*  Name.Variable */
-.highlight .ow    { color: var(--sol-green); font-weight: bold }  /*  Operator.Word */
+.highlight .o     { color: var(--sol-green) }  /*  Operator */
+.highlight .ow    { color: var(--sol-green) }  /*  Operator.Word */
 .highlight .w     { color: var(--sol-comment) }  /*  Text.Whitespace */
+.highlight .l     { color: var(--sol-body) } /* Literal */
 .highlight .m     { color: var(--sol-cyan) }  /*  Literal.Number */
 .highlight .mf    { color: var(--sol-cyan) }  /*  Literal.Number.Float */
 .highlight .mh    { color: var(--sol-cyan) }  /*  Literal.Number.Hex */
@@ -109,5 +110,6 @@
 .highlight .vc    { color: var(--sol-cyan) }  /*  Name.Variable.Class */
 .highlight .vg    { color: var(--sol-cyan) }  /*  Name.Variable.Global */
 .highlight .vi    { color: var(--sol-cyan) }  /*  Name.Variable.Instance */
+
 /*============================================================================= 
  *===========================================================================*/

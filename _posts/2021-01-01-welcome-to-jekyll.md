@@ -26,15 +26,17 @@ print_hi('Tom')
 {% endcomment %}
 -->
 
-{% highlight python %}
+{% highlight python linenos %}
 import pandas as pd
-# prints 'Hi, Bernie' to STDOUT.
+
 def print_hi(name):
-  """Print 'Hi, `name`' to STDOUT."""
+  """Print a message to STDOUT."""
   print(f"Hi, {name}.")
+  # Do some math. This is a super duper long line of code that won't fit on screen.
   y = 10_000
   x = 2 * y
   return x**y
+
 >>> print_hi('Bernie')
 Hi, Bernie
 {% endhighlight %}

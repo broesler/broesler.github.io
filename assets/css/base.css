@@ -42,8 +42,7 @@ html {
 
 body {
   color: #515151;
-  /* background-color: #fff; */
-  background-color: var(--sol-bg);
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -148,29 +147,56 @@ code {
   font-size: 80%;
   /* color: #bf616a; */
   color: var(--sol-body);
-  /* background-color: #f9f9f9; */
-  background-color: var(--sol-bghi);
+  background-color: #f9f9f9;
+  /* background-color: var(--sol-bghi); */
   border-radius: 3px;
 }
 pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: .8rem;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  /* background-color: #f9f9f9; */
-  background-color: var(--sol-bghi);
+  background-color: #f9f9f9;
+  /* background-color: var(--sol-bghi); */
 }
 pre code {
   padding: 0;
   font-size: 100%;
   color: inherit;
   background-color: transparent;
+}
+.rouge-table {
+  padding: 0;
+  border: none;
+}
+.rouge-table td {
+  padding 0;
+  border: none;
+}
+.rouge-table code {
+  overflow: auto;
+}
+.gutter {
+  padding-left: 0.25rem;
+  border: none;
+  /* min-width: 50px;  /1* TODO 4*var(--base-font-size) */
+  min-width: 4em; 
+}
+/* TODO 
+ *    * fix wrapping of linenos
+ *    * customize line numbers/`pre code table` property 
+ */
+.lineno {
+  color: #ccc;
+  text-align: right;
+  padding: 0 5px;
+  border-right: 1px solid #ccc;
 }
 
 /* Pygments via Jekyll */
