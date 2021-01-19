@@ -42,7 +42,8 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--sol-bg);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -140,15 +141,15 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: Monaco, Menlo, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
-  font-size: 85%;
+  font-size: 80%;
   /* color: #bf616a; */
   color: var(--sol-body);
   /* background-color: #f9f9f9; */
-  background-color: var(--sol-bg);
+  background-color: var(--sol-bghi);
   border-radius: 3px;
 }
 pre {
@@ -163,7 +164,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   /* background-color: #f9f9f9; */
-  background-color: var(--sol-bg);
+  background-color: var(--sol-bghi);
 }
 pre code {
   padding: 0;

@@ -14,12 +14,29 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
+<!--
+{% comment %}
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+{% endcomment %}
+-->
+
+{% highlight python %}
+import pandas as pd
+# prints 'Hi, Bernie' to STDOUT.
+def print_hi(name):
+  """Print 'Hi, `name`' to STDOUT."""
+  print(f"Hi, {name}.")
+  y = 10_000
+  x = 2 * y
+  return x**y
+>>> print_hi('Bernie')
+Hi, Bernie
 {% endhighlight %}
 
 This is some pretty math:
