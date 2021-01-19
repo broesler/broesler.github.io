@@ -2,37 +2,36 @@
 # you use 'bundle exec jekyll serve'. If you change this file, please restart
 # the server process.
 
-title: Bernie Roesler
-tagline: 'A personal blog'
-description: >- # this means to ignore newlines until "baseurl:"
+title:        Bernie Roesler
+tagline:      'A personal blog'
+date_format:  '%B %-d, %Y'  # i.e. January 1, 2021, see `man date`
+description:  >- # this means to ignore newlines until "baseurl:  "
   A collection of my thoughts, photographs, and code.
   Made by <a href="https://twitter.com/BernieRoesler" target="_blank">@BernieRoesler</a>.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-date_format: "%B %-d, %Y"  # i.e. January 1, 2021, see `man date`
+
+baseurl:  "" # the subpath of your site, e.g. /blog
+url:      "" # the base hostname & protocol for your site, e.g. http:  //example.com
 
 author:
-  name: Bernie Roesler
-  email: bernard.roesler@gmail.com
+  name:          Bernie Roesler
+  email:         bernard.roesler@gmail.com
   social_links:
-    twitter: BernieRoesler
-    github:  broesler
-    linkedin: bernardroesler
+    twitter:     BernieRoesler
+    github:      broesler
+    linkedin:    bernardroesler
 
 # Build settings
-# theme: minima
-version: 0.0.0
+version: 0.0.1
 google_analytics: #
-# google_analytics_id: #UA-XXXX-Y
+
+# Homepage options
+show_excerpts: true  # show excerpt of posts on homepage
+paginate: 5
 
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-
-# Homepage options
-show_excerpts: true  # show excerpt of posts on homepage
-paginate: 5
 
 # Exclude from processing.
 # The following items will not be processed, by default.
