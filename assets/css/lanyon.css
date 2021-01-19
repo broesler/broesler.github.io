@@ -100,6 +100,10 @@ h4, h6 {
  * Super small header above the content for site name and short description.
  */
 
+.masthead {
+  border-bottom: 1px solid #eee;
+}
+
 /* .masthead { */
 /*   padding-top:    1rem; */
 /*   padding-bottom: 1rem; */
