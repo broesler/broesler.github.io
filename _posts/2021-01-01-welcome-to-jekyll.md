@@ -14,19 +14,7 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
-<!--
-{% comment %}
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-{% endcomment %}
--->
-
-{% highlight python linenos %}
+{% highlight python %}
 import pandas as pd
 
 def print_hi(name):
@@ -45,7 +33,8 @@ This is some pretty math:
 
 $$ \tau = \sqrt{\frac{\ell}{g}} $$
 
-that describes the period of a simple harmonic pendulum.
+that describes the period of a simple harmonic pendulum. [Here is a much longer
+sample of code.]( https://github.com/broesler/18.650-Fundamentals-of-Statistics/blob/904cdd849766273aded16b3a9aa5a9c0f6802df9/hw7/hw7_kstest.py#L75-L124)
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
