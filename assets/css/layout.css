@@ -219,6 +219,14 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/* masthead gets a tad smaller at min-width */
+@media (max-width: 48em) {
+  .sidebar-toggle::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 @media print {
   .sidebar-toggle {
     display: none;
