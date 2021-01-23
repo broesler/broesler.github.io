@@ -33,7 +33,7 @@ This is some pretty math:
 
 $$ \tau = \sqrt{\frac{\ell}{g}} $$
 
-that describes the period of a simple harmonic pendulum. [Here is a much longer
+that describes the period of a simple harmonic pendulum with period $\tau$. [Here is a much longer
 sample of code.]( https://github.com/broesler/18.650-Fundamentals-of-Statistics/blob/904cdd849766273aded16b3a9aa5a9c0f6802df9/hw7/hw7_kstest.py#L75-L124)
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
