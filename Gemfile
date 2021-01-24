@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
+  gem "jekyll-commonmark-ghpages", "~> 0.1.6"
 end
 
 gem "webrick", "~> 1.7"

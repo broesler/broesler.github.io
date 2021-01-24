@@ -30,8 +30,15 @@ paginate: 5
 
 plugins:
   - jekyll-feed
+  - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
+
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.

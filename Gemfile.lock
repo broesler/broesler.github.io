@@ -263,6 +263,7 @@ PLATFORMS
 DEPENDENCIES
   classifier-reborn (~> 2.2)
   github-pages
+  jekyll-commonmark-ghpages (~> 0.1.6)
   jekyll-feed (~> 0.12)
   jekyll-gist
   jekyll-paginate
