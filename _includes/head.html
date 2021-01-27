@@ -39,19 +39,32 @@
   {%- endif -%}
 
   <!-- MathJax -->
+  <!-- Allow MathJax to work in older browsers -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script type="text/javascript">
-    window.MathJax = {
-          tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'],  ["\n\n\\[","\\]\n\n"] ], 
-                processEscapes: true
-              },
-          <!-- "HTML-CSS": { -->
-          <!--       styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}} -->
-          <!--     } -->
-        };
+      window.MathJax = {
+        section: 1,
+        loader: {load: ['[tex]/boldsymbol']},
+        tex: {
+          packages: {'[+]': ['boldsymbol']},
+          inlineMath: [              // start/end delimiter pairs for in-line math
+            ['$', '$'],
+            ['\\(', '\\)']
+          ],
+          displayMath: [             // start/end delimiter pairs for display math
+            ['$$', '$$'],
+            ['\\[', '\\]']
+          ],
+          processEscapes: true,      // use \$ to produce a literal dollar sign
+          processRefs: true,         // process \ref{...} outside of math mode
+          tags: 'ams',
+          formatError:               // function called when TeX syntax errors occur
+            (jax, err) => jax.formatError(err)
+        },
+        svg: {fontCache: 'global'}
+      };
   </script>
   <script type="text/javascript" id="MathJax-script" async 
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   </script>
 </head>
