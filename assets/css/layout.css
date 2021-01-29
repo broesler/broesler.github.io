@@ -441,6 +441,7 @@ figcaption {
   padding: 1rem;
   background-color: #f9f9f9;
   width: 100%;
+  overflow-x: scroll;
 }
 
 .algorithm .algorithmic {
