@@ -1,3 +1,5 @@
+/*============================================================================= 
+ *===========================================================================*/
 
 /*
  * Masthead
@@ -420,3 +422,57 @@ a.pagination-item:hover {
   bottom: 0;
 }
 
+/* ---------- Figures and Captions ---------- */
+figure {
+}
+
+figcaption {
+  padding: 0;
+  text-align: justify;
+  font-size: 80%;
+  width: 90%;
+}
+
+/* ---------- Algorithm ---------- */
+.algorithm {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.algorithm .algorithmic {
+  padding: 0;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.1rem;
+  font-size: 90%;
+  color: inherit;
+  background-color: transparent;
+}
+
+.alg_caption_div {
+  text-align: left;
+}
+
+.alg_title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.alg_caption {
+}
+
+/* flush QED to the right */
+.qed_symbol {
+  float: right;
+  text-align: right;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+/*============================================================================= 
+ *===========================================================================*/

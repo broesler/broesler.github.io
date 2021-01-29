@@ -36,6 +36,7 @@ plugins:
   - jekyll-commonmark-ghpages
 
 kramdown:
+  footnote_nr: 1
   footnote_backlink: true
 
 # Exclude from processing.

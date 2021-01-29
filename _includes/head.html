@@ -42,11 +42,8 @@
   <!-- Allow MathJax to work in older browsers -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script type="text/javascript">
-      window.MathJax = {
-        section: 1,
-        loader: {load: ['[tex]/boldsymbol']},
+      MathJax = {
         tex: {
-          packages: {'[+]': ['boldsymbol']},
           inlineMath: [              // start/end delimiter pairs for in-line math
             ['$', '$'],
             ['\\(', '\\)']
@@ -57,7 +54,7 @@
           ],
           processEscapes: true,      // use \$ to produce a literal dollar sign
           processRefs: true,         // process \ref{...} outside of math mode
-          tags: 'ams',
+          tags: 'ams',               // 'all', 'ams', 'none' => 'ams' respects align*
           formatError:               // function called when TeX syntax errors occur
             (jax, err) => jax.formatError(err)
         },
