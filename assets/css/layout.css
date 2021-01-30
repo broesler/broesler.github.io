@@ -444,10 +444,9 @@ figcaption {
   overflow-x: scroll;
 }
 
-.algorithm .algorithmic {
+.algorithmic p {
   padding: 0;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  white-space: pre;
   margin-bottom: 0.2rem;
   line-height: 1.1rem;
   font-size: 90%;
@@ -462,9 +461,11 @@ figcaption {
 .alg_title {
   font-size: 1.1rem;
   font-weight: bold;
+  margin-right: 0.2rem;
 }
 
 .alg_caption {
+  font-style: italic;
 }
 
 /* flush QED to the right */
@@ -473,6 +474,13 @@ figcaption {
   text-align: right;
   font-size: 1.5rem;
   margin-top: -0.5rem;
+}
+
+
+/*---------- Footnotes ----------*/
+.footnotes {
+  font-size: 90%;
+  color: #505050;
 }
 
 /*============================================================================= 

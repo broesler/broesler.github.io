@@ -35,9 +35,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-commonmark-ghpages
 
-kramdown:
-  footnote_nr: 1
-  footnote_backlink: true
+# kramdown:
+#  footnote_nr: 1
+#  footnote_backlink: '&#x21A9;&#xFE0E;'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
