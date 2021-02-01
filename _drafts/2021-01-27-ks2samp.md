@@ -179,26 +179,26 @@ samples.
 </div>
   \label{alg:ks_stat}
 <div class="algorithmic" markdown=1>
-<p><strong>Require:</strong> $X, Y$ are vectors of real numbers. </p>
-<p><strong>Ensure:</strong> $0 \le T_{n,m} \le 1$. </p>
-<p><strong>Procedure</strong> <span style="font-variant: small-caps">KS2Sample</span>($X, Y$) </p>
-<p>	$X_s \gets \{-\infty,$ <span style="font-variant: small-caps">Sort</span>($X$)$\}$ </p>
-<p>	$Y_s \gets$ <span style="font-variant: small-caps">Sort</span>($Y$) </p>
+<p><span class="alg_command">Require:</span> $X, Y$ are vectors of real numbers. </p>
+<p><span class="alg_command">Ensure:</span> $0 \le T_{n,m} \le 1$. </p>
+<p><span class="alg_command">Procedure</span> <span class="alg_proc">KS2Sample</span>($X, Y$) </p>
+<p>	$X_s \gets \{-\infty,$ <span class="alg_call">Sort</span>($X$)$\}$ </p>
+<p>	$Y_s \gets$ <span class="alg_call">Sort</span>($Y$) </p>
 <p>	$n \gets \dim X_s$ </p>
 <p>	$m \gets \dim Y_s$ </p>
 <p>	$T_v \gets$ empty array of size $n$ </p>
-<p>	<strong>for all</strong> $i \in \{0, \dots, n\}$ <strong>do</strong> </p>
-<p>		$j \gets j$ + <span style="font-variant: small-caps">Rank</span>($\{Y_s^{(\ell)}\}_{\ell=j}^m, X_s^{(i)}$) <span style="float: right">&#x25B7; Only search remaining $j$ values</span> </p>
-<p>		$k \gets j$ + <span style="font-variant: small-caps">Rank</span>($\{Y_s^{(\ell)}\}_{\ell=j}^m, X_s^{(\min(i+1, n))}$) </p>
+<p>	<span class="alg_command">for all</span> $i \in \{0, \dots, n\}$ <span class="alg_command">do</span> </p>
+<p>		$j \gets j$ + <span class="alg_call">Rank</span>($\{Y_s^{(\ell)}\}_{\ell=j}^m, X_s^{(i)}$) <span style="float: right">&#x25B7; Only search remaining $j$ values</span> </p>
+<p>		$k \gets j$ + <span class="alg_call">Rank</span>($\{Y_s^{(\ell)}\}_{\ell=j}^m, X_s^{(\min(i+1, n))}$) </p>
 <p>		$\displaystyle{T_v^{(i)} \gets \max\left(\left|\frac{i}{n} - \frac{j}{m}\right|, \left|\frac{i}{n} - \frac{k}{m}\right|\right)}$ </p>
-<p>	<strong>end for</strong> </p>
-<p>	<strong>Return</strong> $\max_i T_v$ </p>
-<p><strong>end procedure</strong> </p>
-<p><strong>Function</strong> <span style="font-variant: small-caps">Rank</span>($A, k$) </p>
+<p>	<span class="alg_command">end for</span> </p>
+<p>	<span class="alg_command">Return</span> $\max_i T_v$ </p>
+<p><span class="alg_command">end procedure</span> </p>
+<p><span class="alg_command">Function</span> <span class="alg_proc">Rank</span>($A, k$) </p>
 	
-<p>	<strong>Assert</strong> $A$ is sorted in ascending order. </p>
-<p>	<strong>Return</strong> $\#\{i=1,\dots,\dim A \colon k < A_i\}$ </p>
-<p><strong>end function</strong> </p>
+<p>	<span class="alg_command">Assert</span> $A$ is sorted in ascending order. </p>
+<p>	<span class="alg_command">Return</span> $\#\{i=1,\dots,\dim A \colon k < A_i\}$ </p>
+<p><span class="alg_command">end function</span> </p>
 </div>
 </div>
 
@@ -379,7 +379,7 @@ $$
 ### The Test Statistic is Pivotal
 
 Since
-Proposition <a href="#prop:Tnm" data-reference-type="ref" data-reference="prop:Tnm">Proposition 4</a>
+<a href="#prop:Tnm" data-reference-type="ref" data-reference="prop:Tnm">Proposition 4</a>
 has been shown to be true under the null hypothesis $H_0$, and the
 distributions of $U_i$ and $V_j$ have been shown to be
 $\mathcal{U}\left(\left[ 0, 1 \right]\right)$ independent of the
@@ -415,19 +415,19 @@ An algorithm to approximate $q_\alpha$ given $\alpha$ is as follows.
 </div>
   \label{alg:ks_q}
 <div class="algorithmic" markdown=1>
-<p><strong>Require:</strong> $n = \dim X$. $m = \dim Y$. $M \in \mathbb{N}$. $\alpha \in (0, 1)$. </p>
-<p><strong>Ensure:</strong> $q_\alpha \in [0, 1]$. </p>
-<p><strong>Procedure</strong> <span style="font-variant: small-caps">KSQuantile</span>($n, m, M, \alpha$) </p>
+<p><span class="alg_command">Require:</span> $n = \dim X$, $m = \dim Y$, $M \in \mathbb{N}$, and $\alpha \in (0, 1)$. </p>
+<p><span class="alg_command">Ensure:</span> $q_\alpha \in [0, 1]$. </p>
+<p><span class="alg_command">Procedure</span> <span class="alg_proc">KSQuantile</span>($n, m, M, \alpha$) </p>
 <p>	$T_v \gets$ empty array of size $n$ </p>
-<p>	<strong>for all</strong> $i \in \{0,\dots,M\}$ <strong>do</strong> </p>
-<p>		$X_s \gets$ sample of size $n$ from $\N{0}{1}$. </p>
-<p>		$Y_s \gets$ sample of size $m$ from $\N{0}{1}$. </p>
-<p>		$T_v^{(i)} \gets$ <span style="font-variant: small-caps">KS2Sample</span>($X_s, Y_s$) <span style="float: right">&#x25B7; defined in Algorithm~\ref{alg:ks_stat</span>} </p>
-<p>	<strong>end for</strong> </p>
-<p>	$T_{vs} \gets$ <span style="font-variant: small-caps">Sort</span>($T_v$) </p>
+<p>	<span class="alg_command">for all</span> $i \in \{0,\dots,M\}$ <span class="alg_command">do</span> </p>
+<p>		$X_s \gets$ sample of size $n$ from $\mathcal{N}\left( 0, 1 \right)$. </p>
+<p>		$Y_s \gets$ sample of size $m$ from $\mathcal{N}\left( 0, 1 \right)$. </p>
+<p>		$T_v^{(i)} \gets$ <span class="alg_call">KS2Sample</span>($X_s, Y_s$) <span style="float: right">&#x25B7; defined in Algorithm~\ref{alg:ks_stat</span>} </p>
+<p>	<span class="alg_command">end for</span> </p>
+<p>	$T_{vs} \gets$ <span class="alg_call">Sort</span>($T_v$) </p>
 <p>	$j \gets \ceil*{M(1 - \alpha)}$ </p>
-<p>	<strong>Return</strong> $T_{vs}^{(j)}$ </p>
-<p><strong>end procedure</strong> </p>
+<p>	<span class="alg_command">Return</span> $T_{vs}^{(j)}$ </p>
+<p><span class="alg_command">end procedure</span> </p>
 </div>
 </div>
 

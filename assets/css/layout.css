@@ -472,6 +472,18 @@ figcaption {
   font-style: italic;
 }
 
+.alg_command {
+  font-weight: bold;
+}
+
+.alg_proc {
+  font-variant: small-caps;
+}
+
+.alg_call {
+  font-variant: small-caps;
+}
+
 /* flush QED to the right */
 .qed_symbol {
   float: right;
