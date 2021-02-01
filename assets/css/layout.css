@@ -433,6 +433,10 @@ figcaption {
   width: 90%;
 }
 
+.fig_number {
+  font-variant: small-caps;
+}
+
 /* ---------- Algorithm ---------- */
 .algorithm {
   display: block;
