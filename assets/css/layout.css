@@ -387,6 +387,23 @@ a.pagination-item:hover {
   }
 }
 
+/* ---------- Profile Photo ---------- */
+
+#sidebar_profile_div {
+  padding: 0;
+  width: 8rem;  /* sidebar is 14rem wide */
+  height: 8rem;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: -1.5rem;
+  overflow: hidden;
+}
+
+#sidebar_profile_photo {
+  position: relative;
+  transform: scale(1.4) translateY(1.1rem);
+}
+
 /* ---------- Social Links ---------- */
 .social-media-div {
   display: table;

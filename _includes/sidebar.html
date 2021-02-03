@@ -5,6 +5,12 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
+    <div id="sidebar_profile_div">
+      <img src="/assets/images/Bernie_Roesler.jpg" id="sidebar_profile_photo"/>
+    </div>
+  </div>
+
+  <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
 
@@ -34,11 +40,9 @@
     {% endif %}
   </nav>
 
-  <!-- <div class="sidebar-item"> -->
-    <div class="social-media-div">
-      {%- include social.html -%}
-    </div>
-  <!-- </div> -->
+  <div class="social-media-div">
+    {%- include social.html -%}
+  </div>
 
   <div class="copyright-div">
     <p>&copy; {{ site.time | date: '%Y' }} Bernard Roesler. <br> All rights reserved.</p>
