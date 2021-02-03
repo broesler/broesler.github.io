@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Kolmogorov-Smirnov Test for Two Samples"
-date: 2021-01-27
+date:   "2021-02-03 16:36:25 -0500"
 categories: statistics
 tags: statistics hypothesis-testing python
+reading_time: 15
 ---
 
 <div style="visibility: hidden">
@@ -88,10 +89,10 @@ empirical cdf of $\{Y_1, \dots, Y_m\}$.
 
 ### The Test Statistic
 
-Let
+Let the test statistic be
 
 $$
-T_{n,m} = \sup_{t \in \mathbb{R}} \left| F_n(t) - G_m(t) \right|
+T_{n,m} = \sup_{t \in \mathbb{R}} \left| F_n(t) - G_m(t) \right|.
 $$
 
 <div class="prop" markdown=1>
@@ -166,9 +167,9 @@ $$
 $$
 
  where $X^{(i)}$ is the $i^\text{th}$ value in the
-ordered set of data $X^{(1)} \le \cdots \le X^{(n)}$. The values
-$X^{(0)}, Y^{(0)} \coloneqq -\infty$ are prepended to the otherwise
-finite realizations to simplify the computation. <span class="qed_symbol">◻</span>
+ordered set of data $X^{(1)} \le \cdots \le X^{(n)}$. The value
+$X^{(0)} \coloneqq -\infty$ is prepended to the otherwise finite
+realizations to simplify the computation. <span class="qed_symbol">◻</span>
 
 </div>
 

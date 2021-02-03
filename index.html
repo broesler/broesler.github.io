@@ -12,7 +12,11 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date: site.date_format }}</span>
+    <span class="post-date">{{ post.date | date: site.date_format }}
+    {% if post.reading_time %}
+    &middot; {{ post.reading_time }} min read 
+    {% endif %}
+    </span>
 
     {%- if site.show_excerpts -%}
       {{ post.excerpt }}
