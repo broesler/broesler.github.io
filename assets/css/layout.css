@@ -460,10 +460,10 @@ figcaption {
 
 .alg_caption_div {
   text-align: left;
+  margin-bottom: 0.5rem;
 }
 
 .alg_title {
-  font-size: 1.1rem;
   font-weight: bold;
   margin-right: 0.2rem;
 }
@@ -484,6 +484,8 @@ figcaption {
   font-variant: small-caps;
 }
 
+/*---------- Math ----------*/
+
 /* flush QED to the right */
 .qed_symbol {
   float: right;
@@ -492,6 +494,11 @@ figcaption {
   margin-top: -0.5rem;
 }
 
+/* TODO: make post about this */
+.MathJax_ref {
+  stroke: #268bd2;
+  fill: #268bd2;
+}
 
 /*---------- Footnotes ----------*/
 .footnotes {
