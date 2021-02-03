@@ -30,8 +30,14 @@ paginate: 5
 
 plugins:
   - jekyll-feed
+  - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
+
+# kramdown:
+#  footnote_nr: 1
+#  footnote_backlink: '&#x21A9;&#xFE0E;'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

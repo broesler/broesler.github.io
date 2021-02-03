@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Over the Rainbow
+- Font Author: Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com)
+- Font Source: http://fonts.gstatic.com/s/overtherainbow/v11/11haGoXG1k_HKhMLUWz7Mc7vvW5upvOm9NA2XG0.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

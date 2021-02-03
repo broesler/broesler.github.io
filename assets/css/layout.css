@@ -1,3 +1,24 @@
+<<<<<<< HEAD:_sass/_layout.scss
+||||||| b45043b:assets/css/lanyon.css
+/*
+ *  ___
+ * /\_ \
+ * \//\ \      __      ___   __  __    ___     ___
+ *   \ \ \   /'__`\  /' _ `\/\ \/\ \  / __`\ /' _ `\
+ *    \_\ \_/\ \_\.\_/\ \/\ \ \ \_\ \/\ \_\ \/\ \/\ \
+ *    /\____\ \__/.\_\ \_\ \_\/`____ \ \____/\ \_\ \_\
+ *    \/____/\/__/\/_/\/_/\/_/`/___/> \/___/  \/_/\/_/
+ *                               /\___/
+ *                               \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/lanyon.
+ */
+
+=======
+/*============================================================================= 
+ *===========================================================================*/
+>>>>>>> plain_css:assets/css/layout.css
 
 /*
  * Masthead
@@ -66,11 +87,22 @@
   color: #9a9a9a;
 }
 
+<<<<<<< HEAD:_sass/_layout.scss
 /* Related posts */
 .related {
   padding-top: 1rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
+||||||| b45043b:assets/css/lanyon.css
+.container {
+  max-width: 28rem;
+=======
+/* Related posts */
+.related {
+  padding-top: 0;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+>>>>>>> plain_css:assets/css/layout.css
 }
 .related-posts {
   padding-left: 0;
@@ -83,10 +115,46 @@
   font-size: 75%;
   color: #999;
 }
+<<<<<<< HEAD:_sass/_layout.scss
 .related-posts li a:hover {
   /* color: #268bd2; */
   background-color: #f0f0f0;
   text-decoration: none;
+||||||| b45043b:assets/css/lanyon.css
+
+/* .masthead { */
+/*   padding-top:    1rem; */
+/*   padding-bottom: 1rem; */
+/*   margin-bottom: 3rem; */
+/*   border-bottom: 1px solid #eee; */
+/* } */
+/* .masthead-title { */
+/*   margin-top: 0; */
+/*   margin-bottom: 0; */
+/*   color: #505050; */
+/* } */
+/* .masthead-title a { */
+/*   color: #505050; */
+/* } */
+/* .masthead-title small { */
+/*   font-size: 75%; */
+/*   font-weight: 400; */
+/*   color: #c0c0c0; */
+/*   letter-spacing: 0; */
+/* } */
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+=======
+.related-posts li a:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+>>>>>>> plain_css:assets/css/layout.css
 }
 /* .related-posts li a:hover small { */
 /*   color: inherit; */
@@ -194,8 +262,10 @@ a.sidebar-nav-item:focus {
 
 .sidebar-toggle::before {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  /* width: 32px; */
+  /* height: 32px; */
+  width: 28px;
+  height: 28px;
   content: "";
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23555' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
 }
@@ -216,6 +286,14 @@ a.sidebar-nav-item:focus {
 @media (min-width: 30.1em) {
   .sidebar-toggle {
     position: fixed;
+  }
+}
+
+/* masthead gets a tad smaller at min-width */
+@media (max-width: 48em) {
+  .sidebar-toggle::before {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -263,6 +341,7 @@ a.sidebar-nav-item:focus {
           transform: translateX(14rem);
 }
 
+<<<<<<< HEAD:_sass/_layout.scss
 
 /*
  * Posts and pages
@@ -372,6 +451,119 @@ a.pagination-item:hover {
   }
 }
 
+||||||| b45043b:assets/css/lanyon.css
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+/* .page, */
+/* .post { */
+/*   margin-bottom: 4em; */
+/* } */
+
+/* /1* Blog post or page title *1/ */
+/* .page-title, */
+/* .post-title, */
+/* .post-title a { */
+/*   color: #303030; */
+/* } */
+/* .page-title, */
+/* .post-title { */
+/*   margin-top: 0; */
+/* } */
+
+/* /1* Meta data line below post title *1/ */
+/* .post-date { */
+/*   display: block; */
+/*   margin-top: -.5rem; */
+/*   margin-bottom: 1rem; */
+/*   color: #9a9a9a; */
+/* } */
+
+/* /1* Related posts *1/ */
+/* .related { */
+/*   padding-top: 2rem; */
+/*   padding-bottom: 2rem; */
+/*   border-top: 1px solid #eee; */
+/* } */
+/* .related-posts { */
+/*   padding-left: 0; */
+/*   list-style: none; */
+/* } */
+/* .related-posts h3 { */
+/*   margin-top: 0; */
+/* } */
+/* .related-posts li small { */
+/*   font-size: 75%; */
+/*   color: #999; */
+/* } */
+/* .related-posts li a:hover { */
+/*   color: #268bd2; */
+/*   text-decoration: none; */
+/* } */
+/* .related-posts li a:hover small { */
+/*   color: inherit; */
+/* } */
+
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+/* .pagination { */
+/*   overflow: hidden; /1* clearfix *1/ */
+/*   margin-left: -1rem; */
+/*   margin-right: -1rem; */
+/*   font-family: "PT Sans", Helvetica, Arial, sans-serif; */
+/*   color: #ccc; */
+/*   text-align: center; */
+/* } */
+
+/* /1* Pagination items can be `span`s or `a`s *1/ */
+/* .pagination-item { */
+/*   display: block; */
+/*   padding: 1rem; */
+/*   border: 1px solid #eee; */
+/* } */
+/* .pagination-item:first-child { */
+/*   margin-bottom: -1px; */
+/* } */
+
+/* /1* Only provide a hover state for linked pagination items *1/ */
+/* a.pagination-item:hover { */
+/*   background-color: #f5f5f5; */
+/* } */
+
+/* @media (min-width: 30em) { */
+/*   .pagination { */
+/*     margin: 3rem 0; */
+/*   } */
+/*   .pagination-item { */
+/*     float: left; */
+/*     width: 50%; */
+/*   } */
+/*   .pagination-item:first-child { */
+/*     margin-bottom: 0; */
+/*     border-top-left-radius:    4px; */
+/*     border-bottom-left-radius: 4px; */
+/*   } */
+/*   .pagination-item:last-child { */
+/*     margin-left: -1px; */
+/*     border-top-right-radius:    4px; */
+/*     border-bottom-right-radius: 4px; */
+/*   } */
+/* } */
+
+
+=======
+>>>>>>> plain_css:assets/css/layout.css
 /*
  * Reverse layout
  *
@@ -398,110 +590,6 @@ a.pagination-item:hover {
 
 
 /*
- * Themes
- *
- * Apply custom color schemes by adding the appropriate class to the `body`.
- * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
- */
-
-/* Red */
-.theme-base-08 .sidebar,
-.theme-base-08 .sidebar-toggle:active,
-.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #ac4142;
-}
-.theme-base-08 .container a,
-.theme-base-08 .sidebar-toggle,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar,
-.theme-base-09 .sidebar-toggle:active,
-.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #d28445;
-}
-.theme-base-09 .container a,
-.theme-base-09 .sidebar-toggle,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar,
-.theme-base-0a .sidebar-toggle:active,
-.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #f4bf75;
-}
-.theme-base-0a .container a,
-.theme-base-0a .sidebar-toggle,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar,
-.theme-base-0b .sidebar-toggle:active,
-.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #90a959;
-}
-.theme-base-0b .container a,
-.theme-base-0b .sidebar-toggle,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar,
-.theme-base-0c .sidebar-toggle:active,
-.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #75b5aa;
-}
-.theme-base-0c .container a,
-.theme-base-0c .sidebar-toggle,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar,
-.theme-base-0d .sidebar-toggle:active,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .container a,
-.theme-base-0d .sidebar-toggle,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar,
-.theme-base-0e .sidebar-toggle:active,
-.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #aa759f;
-}
-.theme-base-0e .container a,
-.theme-base-0e .sidebar-toggle,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar,
-.theme-base-0f .sidebar-toggle:active,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #8f5536;
-}
-.theme-base-0f .container a,
-.theme-base-0f .sidebar-toggle,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}
-
-
-/*
  * Overlay sidebar
  *
  * Make the sidebar content overlay the viewport content instead of pushing it
@@ -523,6 +611,73 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius:    4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius:    4px;
+    border-bottom-right-radius: 4px;
+  }
 }
 
 /* ---------- Social Links ---------- */
@@ -557,4 +712,116 @@ a.pagination-item:hover {
   position: absolute;
   bottom: 0;
 }
+<<<<<<< HEAD:_sass/_layout.scss
 
+||||||| b45043b:assets/css/lanyon.css
+=======
+
+/* ---------- Figures and Captions ---------- */
+figure {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+figure img {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 80%;
+}
+
+.fig_number {
+  /* font-variant: small-caps; */
+  font-weight: bold;
+}
+
+/* ---------- Algorithm ---------- */
+.algorithm {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.algorithmic p {
+  padding: 0;
+  white-space: pre;
+  margin-bottom: 0.2rem;
+  line-height: 1.1rem;
+  font-size: 90%;
+  color: inherit;
+  background-color: transparent;
+  overflow-x: scroll;
+}
+
+.alg_caption_div {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.alg_title {
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+.alg_caption {
+  font-style: italic;
+}
+
+.alg_command {
+  font-weight: bold;
+}
+
+.alg_proc {
+  font-variant: small-caps;
+}
+
+.alg_call {
+  font-variant: small-caps;
+}
+
+/*---------- Math ----------*/
+
+/* flush QED to the right */
+.qed_symbol {
+  float: right;
+  text-align: right;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+/* TODO: make post about this */
+.MathJax_ref {
+  stroke: #268bd2;
+  fill: #268bd2;
+}
+
+/*---------- Footnotes ----------*/
+.footnotes {
+  padding-top: 1rem;
+  padding-bottom: 0;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
+  font-size: 90%;
+  color: #505050;
+}
+
+/*============================================================================= 
+ *===========================================================================*/
+>>>>>>> plain_css:assets/css/layout.css

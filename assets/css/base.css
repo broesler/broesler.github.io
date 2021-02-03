@@ -29,14 +29,25 @@ body {
 }
 
 html {
+<<<<<<< HEAD:_sass/_base.scss
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+||||||| b45043b:assets/css/poole.css
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+=======
+  /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-size: 16px; */
+  font-size: 12px;
+>>>>>>> plain_css:assets/css/base.css
   line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 16px;
   }
 }
 
@@ -64,10 +75,18 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+<<<<<<< HEAD:_sass/_base.scss
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;  // normal
   line-height: 1.0;
   letter-spacing: -.025rem;
+||||||| b45043b:assets/css/poole.css
+=======
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;  /* normal */
+  line-height: 1.0;
+  letter-spacing: -.025rem;
+>>>>>>> plain_css:assets/css/base.css
   margin-bottom: .5rem;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -97,6 +116,7 @@ h4, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 strong {
@@ -140,14 +160,14 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: Monaco, Menlo, "Courier New", monospace;
 }
-code {
+code {  /* in-line code */
   padding: .25em .5em;
-  font-size: 85%;
-  /* color: #bf616a; */
-  color: #586e75;
+  font-size: 80%;
+  color: var(--sol-body);
   background-color: #f9f9f9;
+  /* background-color: var(--sol-bghi); */
   border-radius: 3px;
 }
 pre {
@@ -155,15 +175,14 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .8rem;
+  width: 85ch;
+  font-size: 0.7rem;
   line-height: 1.4;
   white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  overflow-x: scroll;
   background-color: #f9f9f9;
 }
-pre code {
+pre code {  /* block code */
   padding: 0;
   font-size: 100%;
   color: inherit;
@@ -174,6 +193,8 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
+  white-space: pre;
+  overflow-x: scroll;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -284,6 +305,7 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 }
 
+<<<<<<< HEAD:_sass/_base.scss
 .container {
   max-width: 28rem;
 }
@@ -310,4 +332,155 @@ tbody tr:nth-child(odd) th {
 .wrap {
   position: relative;
   width: 100%;
+||||||| b45043b:assets/css/poole.css
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+.masthead-title a {
+  color: #505050;
+}
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+/* Related posts */
+.related {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  /* color: #268bd2; */
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+/* .related-posts li a:hover small { */
+/*   color: inherit; */
+/* } */
+
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius:    4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius:    4px;
+    border-bottom-right-radius: 4px;
+  }
+=======
+.container {
+  max-width: 28rem;
+}
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+>>>>>>> plain_css:assets/css/base.css
+}
+

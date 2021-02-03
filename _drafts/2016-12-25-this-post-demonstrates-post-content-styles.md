@@ -6,8 +6,16 @@ author:
 - Bart Simpson
 - Nelson Mandela Muntz
 meta: "Springfield"
+excerpt_separator: "<!--more-->"
 ---
 
+<p class="message">This is a message to all of my loyal followers.</p>
+
+<p class="lead">
+This is the lead-in paragraph! It is much more important than all of the other
+paragraphs.
+</p>
+<!--more-->
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
 ## Some great heading (h2)
