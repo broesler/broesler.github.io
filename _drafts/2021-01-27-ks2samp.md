@@ -73,7 +73,7 @@ $$
                    &= F(F^{-1}(t)) &\quad&\text{(definition of cdf)} \nonumber\\
                    &= t \nonumber\\
   \therefore F_U(t) &= t \nonumber\\
-  \implies f_U(t) &= \mathcal{U}\left(\left[ 0, 1 \right]\right) \tag*{◻}\nonumber
+  \implies f_U(t) &= \mathcal{U}\left(\left[ 0, 1 \right]\right) \tag*{◻}
 \end{align}
 $$
 
@@ -205,7 +205,7 @@ samples.
 </div>
 
 The following subroutine is an implementation of
-Algorithm <a href="#alg:ks_stat" data-reference-type="ref" data-reference="alg:ks_stat">[alg:ks_stat]</a>.
+<a href="#alg:ks_stat" data-reference-type="ref" data-reference="alg:ks_stat">Algorithm&nbsp;1</a>.
 It computes an array of values $T_v(i)$ for each value of $X_i$. The
 test statistic $T_{n,m}$ is the maximum of these values.
 
@@ -373,7 +373,7 @@ $$
                      &= F(F^{-1}(t)) &\quad&\text{(definition of cdf)} \nonumber\\
                      &= t \nonumber\\
     \therefore F_U(t) &= G_V(t) = t \nonumber\\
-    \implies f_{U,V}(t) &= \mathcal{U}\left(\left[ 0, 1 \right]\right) \tag*{◻}\nonumber
+    \implies f_{U,V}(t) &= \mathcal{U}\left(\left[ 0, 1 \right]\right) \tag*{◻}
   \end{align}
 $$
 
@@ -424,7 +424,7 @@ An algorithm to approximate $q_\alpha$ given $\alpha$ is as follows.
 <p>	<span class="alg_command">for all</span> $i \in \{0,\dots,M\}$ <span class="alg_command">do</span></p>
 <p>		$X_s \gets$ sample of size $n$ from $\mathcal{N}\left( 0, 1 \right)$.</p>
 <p>		$Y_s \gets$ sample of size $m$ from $\mathcal{N}\left( 0, 1 \right)$.</p>
-<p>		$T_v^{(i)} \gets$ <span class="alg_call">KS2Sample</span>($X_s, Y_s$) <span style="float: right">&#x25B7; defined in Algorithm~\ref{alg:ks_stat</span>}</p>
+<p>		$T_v^{(i)} \gets$ <span class="alg_call">KS2Sample</span>($X_s, Y_s$) <span style="float: right">&#x25B7; defined in <a href="#alg:ks_stat">Algorithm&nbsp;1</a></span></p>
 <p>	<span class="alg_command">end for</span></p>
 <p>	$T_{vs} \gets$ <span class="alg_call">Sort</span>($T_v$)</p>
 <p>	$j \gets \ceil*{M(1 - \alpha)}$</p>
@@ -445,7 +445,7 @@ in comparison to a standard normal. The test statistic distribution is
 skewed to the left, and has a longer right tail than the standard
 normal. Since the asymptotic distribution of the test statistic is not
 readily found in theory, we rely on simulation via
-Algorithm <a href="#alg:ks_q" data-reference-type="ref" data-reference="alg:ks_q">[alg:ks_q]</a>
+<a href="#alg:ks_q" data-reference-type="ref" data-reference="alg:ks_q">Algorithm&nbsp;2</a>
 to estimate the quantiles.
 
 <figure>
@@ -455,7 +455,7 @@ to estimate the quantiles.
 ### The Hypothesis Test
 
 Given the aproximation for $\hat{q}_\alpha$ for $q_\alpha$ from
-Algorithm <a href="#alg:ks_q" data-reference-type="ref" data-reference="alg:ks_q">[alg:ks_q]</a>,
+<a href="#alg:ks_q" data-reference-type="ref" data-reference="alg:ks_q">Algorithm&nbsp;2</a>,
 we define a test with non-asymptotic level $\alpha$ for $H_0$ vs. $H_1$:
 
 $$
@@ -463,7 +463,7 @@ $$
 $$
 
 where $T_{n,m}$ is found by
-Algorithm <a href="#alg:ks_stat" data-reference-type="ref" data-reference="alg:ks_stat">[alg:ks_stat]</a>.
+<a href="#alg:ks_stat" data-reference-type="ref" data-reference="alg:ks_stat">Algorithm&nbsp;1</a>.
 The p-value for this test is
 
 $$
