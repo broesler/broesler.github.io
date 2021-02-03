@@ -427,7 +427,7 @@ An algorithm to approximate $q_\alpha$ given $\alpha$ is as follows.
 <p>		$T_v^{(i)} \gets$ <span class="alg_call">KS2Sample</span>($X_s, Y_s$) <span style="float: right">&#x25B7; defined in <a href="#alg:ks_stat">Algorithm&nbsp;1</a></span></p>
 <p>	<span class="alg_command">end for</span></p>
 <p>	$T_{vs} \gets$ <span class="alg_call">Sort</span>($T_v$)</p>
-<p>	$j \gets \ceil*{M(1 - \alpha)}$</p>
+<p>	$j \gets \ceil{M(1 - \alpha)}$</p>
 <p>	<span class="alg_command">Return</span> $T_{vs}^{(j)}$</p>
 <p><span class="alg_command">end procedure</span></p>
 </div>
