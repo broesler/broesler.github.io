@@ -399,9 +399,17 @@ a.pagination-item:hover {
   overflow: hidden;
 }
 
-#sidebar_profile_photo {
+#sidebar_profile_div img {
   position: relative;
   transform: scale(1.4) translateY(1.1rem);
+}
+
+/* On the about page */
+#profile_div {
+  padding: 1rem;
+  margin: auto;
+  width: 16rem;  /* sidebar is 14rem wide */
+  overflow: hidden;
 }
 
 /* ---------- Social Links ---------- */
@@ -410,6 +418,22 @@ a.pagination-item:hover {
   width: 100%;
   padding-top: 1rem;
   padding-left: 1.5rem;
+}
+
+#social_about {
+  padding: 0;
+  margin-top: -0.75rem;
+  text-align: center;
+}
+
+#social_about ul {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#social_about a {
+  color: #505050;
 }
 
 .social-media-list {
@@ -530,6 +554,15 @@ figcaption {
 .MathJax_ref {
   stroke: #268bd2;
   fill: #268bd2;
+}
+
+/*---------- Source Code Table ----------*/
+#source_code_table_div {
+  overflow-x: scroll;
+}
+
+#source_code_table {
+  margin-top: 2rem;
 }
 
 /*---------- Footnotes ----------*/
