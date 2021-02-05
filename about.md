@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div id="profile_div">
-  <img src="/assets/images/Bernie_Roesler.jpg" id="profile_photo"/>
+  <img src="{{ '/assets/images/Bernie_Roesler.jpg' | absolute_url }}" id="profile_photo"/>
 </div>
 
 Hey, there! I'm Bernie Roesler. I spent a good chunk of my life studying
