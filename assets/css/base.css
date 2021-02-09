@@ -31,14 +31,12 @@ body {
 html {
   /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* font-size: 16px; */
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    /* font-size: 20px; */
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -163,6 +161,9 @@ pre {
   line-height: 1.4;
   white-space: pre;
   overflow-x: scroll;
+  /* hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
   background-color: #f9f9f9;
 }
 pre code {  /* block code */
@@ -170,6 +171,11 @@ pre code {  /* block code */
   font-size: 100%;
   color: inherit;
   background-color: transparent;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+pre::-webkit-scrollbar {
+  display: none;
 }
 
 /* Pygments via Jekyll */

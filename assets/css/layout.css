@@ -501,6 +501,14 @@ figcaption {
   background-color: #f9f9f9;
   width: 100%;
   overflow-x: scroll;
+  /* hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.algorithm::-webkit-scrollbar {
+  display: none;
 }
 
 .algorithmic p {
@@ -511,7 +519,6 @@ figcaption {
   font-size: 90%;
   color: inherit;
   background-color: transparent;
-  overflow-x: scroll;
 }
 
 .alg_caption_div {
