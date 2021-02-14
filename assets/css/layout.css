@@ -610,6 +610,11 @@ figcaption {
     position: relative;
 }
 
+.sidenote {
+  padding-left: 1em;   /* hanging indent */
+  text-indent: -1em;
+}
+
 .sidenote-number {
     counter-increment: sidenote-counter;
 }
@@ -669,12 +674,14 @@ label.margin-toggle:not(.sidenote-number) {
     display: none;
   }
   
-  .sidenote-number {
+  /* Make clear the label is a link to display the note */
+  label {
+    cursor: pointer;
     color: #268bd2;
   }
 
-  .sidenote-number:hover,
-  .sidenote-number:focus {
+  label:hover,
+  label:focus {
     text-decoration: underline;
   }
 
@@ -691,9 +698,6 @@ label.margin-toggle:not(.sidenote-number) {
     position: relative;
   }
 
-  label {
-    cursor: pointer;
-  }
 }
 
 /*============================================================================= 
