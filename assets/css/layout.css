@@ -563,6 +563,10 @@ figcaption {
   fill: #268bd2;
 }
 
+.math.inline {
+  white-space: nowrap;
+}
+
 /*---------- Source Code Table ----------*/
 #source_code_table_div {
   overflow-x: scroll;
