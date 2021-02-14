@@ -668,6 +668,16 @@ label.margin-toggle:not(.sidenote-number) {
   .marginnote {
     display: none;
   }
+  
+  .sidenote-number {
+    color: #268bd2;
+  }
+
+  .sidenote-number:hover,
+  .sidenote-number:focus {
+    text-decoration: underline;
+  }
+
 
   .margin-toggle:checked + .sidenote,
   .margin-toggle:checked + .marginnote {
