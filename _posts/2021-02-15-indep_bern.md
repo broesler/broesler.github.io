@@ -7,6 +7,12 @@ tags: statistics hypothesis-testing python
 reading_time: 29
 ---
 
+<p class="message">
+This post is the first in a series on tests for independence of random
+variables. I'll start with the simplest case of Bernoulli random variables, and
+then explore continous random variables in a later post.
+</p>
+
 <div style="visibility: hidden; padding: 0; margin-bottom: -2rem;">
 $$
 \begin{align*}
@@ -74,7 +80,7 @@ $(X, Y)$ (*i.e. *$X_i \indep X_j$ for $i \ne j$, but $X_i$ may not be
 independent of $Y_i$). Based on this sample, we want to test whether
 $X \indep Y$, *i.e. *whether $r = pq$.
 
-### Estimators of $p, q, r$
+### Estimators of the Parameters
 
 Define the estimators:
 
@@ -318,7 +324,7 @@ $$
     \end{align}
 $$
 
-Since $X \sim \mathop{\mathrm{Ber}}(p) \in \{0, 1\}$, $X^2 = X$, so we have
+Since $X \sim \mathop{\mathrm{Ber}}(p) \in \\\{0, 1\\\}$, $X^2 = X$, so we have
 
 $$
 \begin{align}
@@ -611,7 +617,7 @@ $$
 $$
 
 A proof of Equation $\eqref{eq:t_to_N}$ is given in the 
-<a href="#app:1">Appendix</a>.
+<a href="#app:A">Appendix</a>.
 
 </div>
 
@@ -698,9 +704,16 @@ In other words,
 the lowest level at which we could reject the null hypothesis is at
 $\alpha = \text{$p$-value} = 0.1642 = 16.42\%$.
 
-<div class="appendix" id="#app:1">
 
-## Appendix A: Additional Proofs
+<h2 id="app:A">Appendix A: Additional Proofs</h2>
+
+<div class="app-wrapper">
+
+<label for="app-A" class="app-toggle">Show/Hide Appendix &#8862;</label>
+<input type="checkbox" id="app-A" class="app-toggle"/>
+
+
+<div class="appendix" markdown=1>
 
 <div class="prop" markdown=1>
 
@@ -836,4 +849,5 @@ $$
 \end{align}
 $$
 
+</div>
 </div>

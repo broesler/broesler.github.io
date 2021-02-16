@@ -667,7 +667,6 @@ label.margin-toggle:not(.sidenote-number) {
     display: none;
 }
 
-/* @media (max-width: 760px) { */
 @media (max-width: 48em) {
   label.margin-toggle:not(.sidenote-number) {
     display: inline;
@@ -702,6 +701,30 @@ label.margin-toggle:not(.sidenote-number) {
     position: relative;
   }
 
+}
+
+/*---------- Appendices ----------*/
+input.app-toggle {
+  display: none;
+}
+
+label.app-toggle {
+  cursor: pointer;
+  color: #268bd2;
+}
+
+label.app-toggle:hover,
+label.app-toggle:focus {
+  text-decoration: underline;
+}
+
+/* hide appendices by default */
+.appendix {
+  display: none;
+}
+
+.app-toggle:checked ~ .appendix {
+  display: block;
 }
 
 /*============================================================================= 
