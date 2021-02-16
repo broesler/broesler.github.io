@@ -63,9 +63,9 @@ By the given definition of the Bernoulli random variables,
 
 $$
 \begin{align}
-    \mathbb{P}\left[X \cap Y\right] &= \mathbb{P}\left[X, Y\right] = \mathbb{P}\left[X=1, Y=1\right] = r \nonumber\\
-    \mathbb{P}\left[X\right] &= \mathbb{P}\left[X=1\right] = p \nonumber\\
-    \mathbb{P}\left[Y\right] &= \mathbb{P}\left[Y=1\right] = q \nonumber\\
+    \mathbb{P}\left[X \cap Y\right] &\equiv \mathbb{P}\left[X, Y\right] \equiv \mathbb{P}\left[X=1, Y=1\right] = r \nonumber\\
+    \mathbb{P}\left[X\right] &\equiv \mathbb{P}\left[X=1\right] = p \nonumber\\
+    \mathbb{P}\left[Y\right] &\equiv \mathbb{P}\left[Y=1\right] = q \nonumber\\
     \therefore r = pq &\iff \mathbb{P}\left[X,Y\right] = \mathbb{P}\left[X\right]\mathbb{P}\left[Y\right] \nonumber\\
     &\iff X \indep Y  \tag*{◻}
   \end{align}
