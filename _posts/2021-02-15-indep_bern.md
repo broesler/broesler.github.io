@@ -9,9 +9,8 @@ reading_time: 29
 
 <p class="message">
 This post is the first in a series on tests for independence of random
-variables. I'll start with the simplest case of Bernoulli random variables, and
-then explore continous random variables in a later post.
-</p>
+variables.
+</p> 
 
 <div style="visibility: hidden; padding: 0; margin-bottom: -2rem;">
 $$
@@ -24,6 +23,11 @@ $$
 \end{align*}
 $$
 </div>
+
+Let's start with the simplest case of Bernoulli random variables. I'll
+explore continous random variables in a later post. This post roughly follows
+[MIT's 18.650][ocw], Problem Set 6, although I've written it in a 
+proposition-proof style instead of more verbose prose.
 
 ## Problem Statement
 
