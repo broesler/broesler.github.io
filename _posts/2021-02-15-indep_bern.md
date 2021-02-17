@@ -13,6 +13,11 @@ variables. I'll start with the simplest case of Bernoulli random variables, and
 then explore continous random variables in a later post.
 </p>
 
+**Table of Contents**
+
+* TOC
+{:toc}
+
 <div style="visibility: hidden; padding: 0; margin-bottom: -2rem;">
 $$
 \begin{align*}
@@ -25,6 +30,7 @@ $$
 $$
 </div>
 
+## Problem Statement
 
 Let $X, Y$ be two Bernoulli random variables, not necessarily
 independent, and let
@@ -38,7 +44,7 @@ $$
 $$
 
 We now look to
-define a test to show that the variables are independent.
+define a test to show that $X$ and $Y$ are independent.
 
 ## Condition for Independence
 
@@ -851,3 +857,22 @@ $$
 
 </div>
 </div>
+
+## Conclusion
+Since we've failed to reject our null hypothesis that being happy and being in
+a relationship are independent, we might be tempted to cite the study as proof
+that you do not need to be in a relationship to be happy. Let's not forget
+though that by failing to reject the null hypothesis, we haven't actually
+*proven* anything, we've just *failed to prove* otherwise. How might we redesign
+our study if we wanted to have a stronger result?
+
+The sample size of $N = 1000$ is fairly large, but what might be some other
+confounding factors that our study failed to capture? For one, we do not know
+anything about the homogeneity of the population from which the sample was
+taken. This data could have been taken strictly from a culture that values
+individuality over companionship, in which case it is difficult to extrapolate
+any conclusions to humanity as a whole. 
+
+Looks like we need to collect more evidence. Until then, I'd say it's safer for
+our mental health to assume that happiness and being in a relationship are
+indeed independent!
