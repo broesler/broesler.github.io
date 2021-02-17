@@ -645,7 +645,11 @@ people (aged at least 21 years old) are sampled and asked two questions:
 relationship?”. The answers are summarized in
 <a href="#tab:tab1" data-reference-type="ref" data-reference="tab:tab1">Table 1</a>.
 
-<div id="tab:tab1" style="width: 80%; margin: auto;" markdown=1>
+<div id="tab:tab1" style="width: auto; margin: auto;" markdown=1>
+<span class="marginnote-wrapper"><label for="sn-0" class="margin-toggle">&#8862;</label>
+<input type="checkbox" id="sn-0" class="margin-toggle"/>
+<span class="marginnote">Data sourced from [MIT's 18.650][ocw].</span></span>
+
 
 |                           | **Happy** | **Not Happy** | **Total** |
 |--------------------------:|:---------:|:-------------:|:---------:|
@@ -871,3 +875,6 @@ any conclusions to humanity as a whole.
 Looks like we need to collect more evidence. Until then, I'd say it's safer for
 our mental health to assume that happiness and being in a relationship are
 indeed independent!
+
+
+[ocw]: https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/index.htm
