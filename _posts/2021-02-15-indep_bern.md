@@ -13,11 +13,6 @@ variables. I'll start with the simplest case of Bernoulli random variables, and
 then explore continous random variables in a later post.
 </p>
 
-**Table of Contents**
-
-* TOC
-{:toc}
-
 <div style="visibility: hidden; padding: 0; margin-bottom: -2rem;">
 $$
 \begin{align*}
@@ -858,7 +853,7 @@ $$
 </div>
 </div>
 
-## Conclusion
+## Conclusions
 Since we've failed to reject our null hypothesis that being happy and being in
 a relationship are independent, we might be tempted to cite the study as proof
 that you do not need to be in a relationship to be happy. Let's not forget
