@@ -10,6 +10,21 @@
  *  ------------ */
 /*  The inline comments show the canonical L*a*b values for each color. */
 :root {
+  /* Define colors for standard text */
+  --title-fg: #303030;
+  --text-fg: #515151;
+  --text-bg: #fff;
+  --heading-fg: #313131;
+  --masthead-fg: #505050;
+  --masthead-fg-small: #c0c0c0;
+  --strong-fg: #303030;  /* slightly darker than text */
+  --message-fg: #717171;
+  --message-bg: #f9f9f9;
+  --table-row-hl: #f9f9f9;
+  --table-border: #e5e5e5;
+  --sidebar-toggle-fg: #505050;
+  --sidebar-toggle-bg: #fff;
+  /* Define colors for code and pre blocks */
   --sol-base03:   #002b36;  /*  15 -12 -12 */
   --sol-base02:   #073642;  /*  20 -12 -12 */
   --sol-base01:   #586e75;  /*  45 -07 -07 */
@@ -26,20 +41,36 @@
   --sol-blue:     #268bd2;  /*  55 -10 -45 */
   --sol-cyan:     #2aa198;  /*  60 -35 -05 */
   --sol-green:    #859900;  /*  60 -20  65 */
-  --sol-bg:       var(--sol-base3);
+  /* --sol-bg:       var(--sol-base3); */
+  --sol-bg:       #f9f9f9;  /* use a grey instead of yellow tint */
   --sol-bghi:     var(--sol-base2);
   --sol-comment:  var(--sol-base1);
   --sol-body:     var(--sol-base00);
   --sol-emph:     var(--sol-base01);
 }
 
-@media (prefers-color-scheme dark) {
+@media (min-width: 1px) {
+/* @media (prefers-color-scheme dark) { */
   :root {
-    --sol-bg:  var(--sol-base03);
-    --sol-bghi:  var(--sol-base02);
+    --title-fg: #ddd;
+    --text-fg: #9a9a9a;
+    --text-bg: #2b2b2b;  /* #444 a bit lighter */
+    --heading-fg: #ddd;
+    --masthead-fg: #c0c0c0;
+    --masthead-fg-small: #505050;
+    --strong-fg: #9a9a9a;
+    --message-fg: #f9f9f9;
+    --message-bg: #444;
+    --table-row-hl: #444;
+    --table-border: #999;
+    --sidebar-toggle-fg: #fff;
+    --sidebar-toggle-bg: #222;
+    /* --sol-bg:       var(--sol-base03); */
+    --sol-bg:       #222;
+    --sol-bghi:     var(--sol-base02);
     --sol-comment:  var(--sol-base01);
-    --sol-body: var(--sol-base0);
-    --sol-emph: var(--sol-base1);
+    --sol-body:     var(--sol-base0);
+    --sol-emph:     var(--sol-base1);
   }
 }
 

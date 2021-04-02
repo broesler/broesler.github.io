@@ -41,8 +41,8 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  color: var(--text-fg);
+  background-color: var(--text-bg);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   counter-reset: sidenote-counter;
@@ -51,7 +51,7 @@ body {
 /* Links */
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: var(--sol-blue);
   text-decoration: none;
 }
 a strong {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.0;
   letter-spacing: -.025rem;
   margin-bottom: .5rem;
-  color: #313131;
+  color: var(--heading-fg);
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -102,7 +102,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: var(--strong-fg);
 }
 
 
@@ -153,8 +153,7 @@ code {  /* in-line code */
   padding: .25em .5em;
   font-size: 80%;
   color: var(--sol-body);
-  background-color: #f9f9f9;
-  /* background-color: var(--sol-bghi); */
+  background-color: var(--sol-bg);
   border-radius: 3px;
 }
 pre {
@@ -170,7 +169,7 @@ pre {
   /* hide scrollbar */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
-  background-color: #f9f9f9;
+  background-color: var(--sol-bg);
 }
 pre code {  /* block code */
   padding: 0;
@@ -246,17 +245,17 @@ table {
   margin: auto;
   margin-bottom: 1rem;
   max-width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--table-border);
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--table-border);
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: var(--table-row-hl);
 }
 
 
@@ -282,8 +281,10 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
+  /* color: #717171; */
+  /* background-color: #f9f9f9; */
+  color: var(--message-fg);
+  background-color: var(--message-bg);
 }
 
 

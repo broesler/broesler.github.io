@@ -16,15 +16,15 @@
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  color: var(--masthead-fg);
 }
 .masthead-title a {
-  color: #505050;
+  color: var(--masthead-fg);
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: var(--masthead-fg-small);
   letter-spacing: 0;
 }
 
@@ -53,7 +53,7 @@
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: var(--title-fg);
 }
 .page-title,
 .post-title {
@@ -184,8 +184,8 @@ a.sidebar-nav-item:focus {
   display: flex;
   align-items: center;
   padding: .25rem .75rem;
-  color: #505050;
-  background-color: #fff;
+  color: var(--sidebar-toggle-fg);
+  background-color: var(--sidebar-toggle-bg);
   border-radius: .25rem;
   cursor: pointer;
 }
@@ -498,7 +498,7 @@ figcaption {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: var(--sol-bg);
   width: 100%;
   overflow-x: scroll;
   /* hide scrollbar */
