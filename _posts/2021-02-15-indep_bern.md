@@ -197,14 +197,14 @@ $$
 where $\Sigma$ is the 3-by-3 symmetric covariance matrix, defined as
 
 $$
-\begin{equation}
+\begin{equation*}
   \Sigma \coloneqq
   \begin{bmatrix}
     \operatorname{Var}\left(\hat{p}\right) & \operatorname{Cov}\left(\hat{p}, \hat{q}\right) & \operatorname{Cov}\left(\hat{p}, \hat{r}\right) \\
     \cdot & \operatorname{Var}\left(\hat{q}\right) & \operatorname{Cov}\left(\hat{q}, \hat{r}\right) \\
     \cdot & \cdot & \operatorname{Var}\left(\hat{r}\right)
   \end{bmatrix}.
-\end{equation}
+\end{equation*}
 $$
 
 We first need to determine the expectations of the estimators.
