@@ -41,6 +41,7 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
+  <!-- TODO move this script to its own file? -->
   <!-- Katex -->
   <!-- See: <https://www.xuningyang.com/blog/2021-01-11-katex-with-jekyll/#step-1-adding-katex> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/katex.min.css" integrity="sha384-mXD7x5S50Ko38scHSnD4egvoExgMPbrseZorkbE49evAfv9nNcbrXJ8LLNsDgh9d" crossorigin="anonymous">
@@ -72,6 +73,12 @@
               "\\floor": "\\left\\lfloor #1 \\right\\rfloor",
               "\\indep": "\\perp \\hspace{-18mu} \\perp",
               "\\nindep": "\\not \\indep",
+              "\\T": "\\top",
+              "\\Prob": "\\mathbb{P}\\left[#1\\right]",
+              "\\E": "\\mathbb{E}\\left[#1\\right]",
+              "\\V": "\\mathbb{V}\\left[#1\\right]",
+              "\\Cov": "\\operatorname{Cov}\\left(#1\\right)",
+              "\\N": "\\mathcal{N}\\left( #1, #2 \\right)",
             }
           });
       });

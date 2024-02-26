@@ -478,7 +478,7 @@ figure img {
 
 figcaption {
   padding: 0;
-  margin: 0;
+  margin: 10px;
   width: 90%;
   display: block;
   margin-left: auto;
