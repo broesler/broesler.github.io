@@ -10,16 +10,15 @@ permalink: /about/
 
 Hey, there! I'm Bernie Roesler. I spent a good chunk of my life studying
 engineering sciences and fluid mechanics at the [Thayer School of
-Engineering][thayer-school] at [Dartmouth College][dartmouth], and now 
-consult at [E<sup>*x*</sup>ponent][exponent] in the [Thermal Sciences
+Engineering][thayer-school] at [Dartmouth College][dartmouth], and 
+consulting at [E<sup>*x*</sup>ponent][exponent] in the [Thermal Sciences
 Practice][thermal]. 
 
 I've had these piles of notes, derivations, code snippets, and general ramblings
 stored away on my computer for my own reference, but figured they would be more
 useful and enjoyable to others if I put them out into the world (wide web). 
 
-Feel free to check out my [professional résumé][pro-res] or
-contact me through any of my social links:
+Feel free to contact me through any of my social links:
 
 <div class="social-media-div" id="social_about">
   {%- include social.html -%}
@@ -29,9 +28,8 @@ Thanks for reading!
 
 
 <p class="message" style="margin-top: 2rem" markdown=1>
-**Disclaimer** The views and opinions expressed on this site are
-solely my own, and do not necessarily represent those of Exponent, Inc. or its
-employees. 
+**Disclaimer** The views and opinions expressed on this site are solely my own,
+and do not necessarily represent those of any of my professional affiliations. 
 
 The information is presented without warranty. I assume no responsibility or
 liability for any errors or omissions in the content of this site. The
@@ -46,5 +44,4 @@ guarantees of completeness, accuracy, usefulness or timeliness.
 [thayer-school]: https://thayer.dartmouth.edu
 [dartmouth]: https://www.dartmouth.edu
 [exponent]: https://www.exponent.com
-[thermal]: https://www.exponent.com/services/practices/engineering/thermal-sciences/?serviceId=0615d33b-b18d-4d9a-b817-1ef32c82e01e&loadAllByPageSize=true&knowledgePageSize=3&knowledgePageNum=0&newseventPageSize=3&newseventPageNum=0&professionalsPageNum=1
-[pro-res]: https://www.exponent.com/professionals/r/roesler-bernard
+[thermal]: https://www.exponent.com/expertise/thermal-sciences
