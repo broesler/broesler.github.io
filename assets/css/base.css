@@ -169,6 +169,8 @@ pre {
   /* hide scrollbar */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
+  ::-webkit-scrollbar { display: none; }  /* Chrome, Safari FIXME */
+  ::-webkit-scrollbar-track { background: transparent; }
   background-color: var(--sol-bg);
 }
 pre code {  /* block code */
@@ -176,11 +178,7 @@ pre code {  /* block code */
   font-size: 100%;
   color: inherit;
   background-color: transparent;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-pre::-webkit-scrollbar {
-  display: none;
+  white-space: pre-wrap;  /* potentially avoid scrollbar display */
 }
 
 /* Pygments via Jekyll */
@@ -281,8 +279,6 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  /* color: #717171; */
-  /* background-color: #f9f9f9; */
   color: var(--message-fg);
   background-color: var(--message-bg);
 }
