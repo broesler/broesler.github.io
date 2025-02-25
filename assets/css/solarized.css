@@ -50,7 +50,7 @@
 }
 
 @media (min-width: 1px) {
-/* @media (prefers-color-scheme dark) { */
+@media (prefers-color-scheme dark) {
   :root {
     --title-fg: #ddd;
     --text-fg: #9a9a9a;
@@ -72,6 +72,7 @@
     --sol-body:     var(--sol-base0);
     --sol-emph:     var(--sol-base1);
   }
+}
 }
 
 /*  Syntax highlighting styles */
