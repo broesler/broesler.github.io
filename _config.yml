@@ -22,7 +22,6 @@ author:
 
 # Build settings
 version: 0.0.1
-google_analytics: #
 
 # Homepage options
 show_excerpts: true  # show excerpt of posts on homepage

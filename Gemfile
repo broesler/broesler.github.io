@@ -13,5 +13,8 @@ group :jekyll_plugins do
   gem "jekyll-commonmark-ghpages", "~> 0.1.6"
 end
 
+gem "csv"
+gem "bigdecimal"
 gem "webrick", "~> 1.7"
 gem "classifier-reborn", "~> 2.2"
+gem "faraday-retry"
