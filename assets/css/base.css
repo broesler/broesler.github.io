@@ -31,7 +31,7 @@ body {
 html {
   /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.5;
 }
 @media (min-width: 38em) {
@@ -190,6 +190,21 @@ pre code {  /* block code */
 }
 .highlight pre {
   margin-bottom: 0;
+}
+
+/* Put the language in the top right corner */
+div[data-lang] {
+  position: relative;
+}
+div[data-lang]::before{
+  content: attr(data-lang);  /* get the language from the data-lang attribute */
+  position: absolute;
+  top: 0;
+  right: 10px;  /* adjust as needed */
+  padding: 3px 5px;
+  font-size: 0.8rem;
+  /* background-color: var(--sol-bg); */
+  color: var(--sol-comment);
 }
 
 /* Gist via GitHub Pages */

@@ -81,4 +81,20 @@
       });
   </script>
 
+  <!-- Add data-lang attribute to code blocks -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('div[class*=language-').forEach(function(block) {
+        let classList = block.classList;
+        for (let i = 0; i < classList.length; i++) {
+          if (classList[i].startsWith('language-')) {
+            let lang = classList[i].substring(9);  // Extract language name
+            block.setAttribute('data-lang', lang);
+            break;  // Stop after finding the language class
+          }
+        }
+      });
+    });
+  </script>
+
 </head>
