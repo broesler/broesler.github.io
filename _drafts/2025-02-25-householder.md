@@ -335,6 +335,63 @@ $x \propto e_1$, or $\beta \in [1, 2]$ for any other $x$.
 For this reason, I have implemented the LAPACK algorithm in [my own Householder
 function][cppsparse_house].
 
+## Householder Vectors in Python and MATLAB
+It's nice to implement our own python functions for transparency, but we can
+also use built-in SciPy and MATLAB functions to get the same result.
+
+In python:
+
+```python
+import numpy as np
+import scipy.linalg as la
+
+x = np.r_[3, 4]
+(Qraw, β), _ = la.qr(np.c_[x], mode='raw')  # qr input must be 2D
+v = np.vstack([1.0, Qraw[1:]])
+
+# Output
+>>> v
+===
+array([[1. ],
+       [0.5]])
+>>> β
+=== array([1.6])
+```
+
+or in MATLAB/Octave:
+<!-- MARGIN NOTES -->
+<span class="marginnote-wrapper">
+<label for="sn-0" class="margin-toggle">&#8862;</label>
+<input type="checkbox" id="sn-0" class="margin-toggle"/>
+<span class="marginnote">
+NB: I have only tested this code in Octave. Octave does *not* normalize the
+results. I have not tested this code in MATLAB itself.
+</span></span>
+
+```matlab
+x = [3, 4]';
+[v, beta] = gallery('house', x)
+
+% Note that Octave does *not* normalize the results
+% Output
+v =
+
+   8
+   4
+
+beta = 0.025000
+
+% To match SciPy, run:
+>> v1 = v(1);
+>> v /= v1
+v =
+
+   1.0000
+   0.5000
+
+>> beta *= v1^2
+beta = 1.6000
+```
 
 # Conclusions
 We have seen how Householder vectors are defined, and the numerical
@@ -363,15 +420,15 @@ For a more in-depth discussion of the CSparse routines, see
 <!-- ---------------------------------------------------------------------- -->
 <!--        Appendix -->
 <!-- ---------------------------------------------------------------------- -->
-<h2 id="app:A">Appendix: Additional Details on the Derivation</h2>
-<div class="app-wrapper">
-<label for="app-A" class="app-toggle">Show/Hide Appendix &#8862;</label>
-<input type="checkbox" id="app-A" class="app-toggle"/>
-<div class="appendix" markdown=1>
+<!-- <h2 id="app:A">Appendix: Additional Details on the Derivation</h2> -->
+<!-- <div class="app-wrapper"> -->
+<!-- <label for="app-A" class="app-toggle">Show/Hide Appendix &#8862;</label> -->
+<!-- <input type="checkbox" id="app-A" class="app-toggle"/> -->
+<!-- <div class="appendix" markdown=1> -->
 
 
-</div>  <!-- appendix -->
-</div>  <!-- app-wrapper -->
+<!-- </div>  <!-1- appendix -1-> -->
+<!-- </div>  <!-1- app-wrapper -1-> -->
 <!-- ---------------------------------------------------------------------- -->
 <!--        End Appendix -->
 <!-- ---------------------------------------------------------------------- -->
