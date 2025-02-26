@@ -11,7 +11,7 @@
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--masthead-fg-small);
 }
 .masthead-title {
   margin-top: 0;
@@ -474,6 +474,8 @@ figure img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
+  height: auto;  /* maintain aspect ratio */
 }
 
 figcaption {
@@ -663,7 +665,7 @@ label.margin-toggle:not(.sidenote-number) {
     display: none;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 64em) {
   label.margin-toggle:not(.sidenote-number) {
     display: inline;
   }
@@ -684,7 +686,6 @@ label.margin-toggle:not(.sidenote-number) {
     text-decoration: underline;
   }
 
-
   .margin-toggle:checked + .sidenote,
   .margin-toggle:checked + .marginnote {
     display: block;
@@ -695,6 +696,8 @@ label.margin-toggle:not(.sidenote-number) {
     margin: 1rem 2.5%;
     vertical-align: baseline;
     position: relative;
+    background-color: var(--message-bg);
+    padding: 5px 10px;
   }
 
 }
