@@ -183,9 +183,27 @@ A comparison of the two methods for an arbitrary vector $x = [3, 4]^T$.
 
 We can see that the Davis method chooses the reflection *closest* to $x$ (across
 the $H^+$ plane), while the LAPACK method chooses the reflection *farthest* from
-$x$ (across the $H^-$ plane). While there is no mathematical difference to
-choosing either reflector, when it comes to the actual numerical computation,
-there is a major difference in the methods.
+$x$ (across the $H^-$ plane).
+
+We can also compare the two methods for a few more cases:
+
+| $x$      | $v_D$     | $v_L$     | $\beta_D$ | $\beta_L$ | $s_D$ | $s_L$ |
+|----------|-----------|-----------|-----------|-----------|-------|-------|
+| [ 3,  0] | [1,  0  ] | [1,  0  ] | 0         | 0         | 3     |  3    |
+| [-3,  0] | [1,  0  ] | [1,  0  ] | 2         | 0         | 3     | -3    |
+| [ 3,  4] | [1, -2  ] | [1,  0.5] | 0.4       | 1.6       | 5     | -5    |
+| [-3,  4] | [1, -0.5] | [1, -0.5] | 1.6       | 1.6       | 5     |  5    |
+| [ 3, -4] | [1,  2  ] | [1, -0.5] | 0.4       | 1.6       | 5     | -5    |
+| [-3, -4] | [1,  0.5] | [1,  0.5] | 1.6       | 1.6       | 5     |  5    |
+
+The subscript $D$ refers to the Davis method, and $L$ refers to the LAPACK
+method. The value $s$ is the first element of $Hx$ for the given $x$, $v$, and
+$\beta$. We can see that Davis always gives a positive $s$, while LAPACK depends
+on the sign of $x_1$, and whether or not $x$ is in the direction of $e_1$.
+
+While there is no mathematical difference to choosing either reflector, when it
+comes to the actual numerical computation, there is a major difference in the
+methods.
 
 
 # Numerical Consequences
