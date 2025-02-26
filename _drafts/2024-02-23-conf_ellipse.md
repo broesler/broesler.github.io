@@ -10,12 +10,11 @@ excerpt: What is the confidence region for a kD Gaussian distribution? And how
 ---
 
 <!-- MARGIN NOTES -->
-<!-- <span --> 
-<!-- class="marginnote-wrapper"><label for="sn-0" class="margin-toggle">&#8862;</label> -->
+<!-- <span class="marginnote-wrapper"> -->
+<!-- <label for="sn-0" class="margin-toggle">&#8862;</label> -->
 <!-- <input type="checkbox" id="sn-0" class="margin-toggle"/> -->
 <!-- <span class="marginnote"> -->
-<!-- Note that the two samples may have different sizes (if -->
-<!-- $n \ne m$). -->
+<!-- Note that the two samples may have different sizes (if $n \ne m$). -->
 <!-- </span></span> -->
 
 I recently went to make a simple plot of the confidence ellipses for a 2D
