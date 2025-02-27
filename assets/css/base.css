@@ -205,7 +205,7 @@ div[data-lang]::before{
   right: 5px;  /* adjust as needed */
   padding: 3px 5px;
   font-size: 0.8rem;
-  /* background-color: var(--sol-bg); */
+  font-style: italic;
   color: var(--sol-comment);
 }
 
