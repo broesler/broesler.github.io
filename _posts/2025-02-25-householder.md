@@ -333,7 +333,7 @@ It turns out that the Davis method follows the trend
 
 $$
 \begin{align*}
-    v &= \begin{bmatrix} 1, -\frac{2}{\epsilon} \end{bmatrix}^T \\
+    v &= \begin{bmatrix} 1, -\dfrac{2}{\epsilon} \end{bmatrix}^T \\
     \beta &= \frac{\epsilon^2}{2}
 \end{align*}
 $$
@@ -342,7 +342,7 @@ whereas the LAPACK method is more constained:
 
 $$
 \begin{align*}
-    v &= \begin{bmatrix} 1, \frac{\epsilon}{2} \end{bmatrix}^T \\
+    v &= \begin{bmatrix} 1, \dfrac{\epsilon}{2} \end{bmatrix}^T \\
     \beta &= 2,
 \end{align*}
 $$

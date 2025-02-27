@@ -31,12 +31,13 @@ body {
 html {
   /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
+  /* font-size: 10px; */
+  font-size: min(1.125rem, max(32vw, 1.25rem));  /* 18px */
   line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 18px;
+    font-size: min(1.125rem, max(32vw, 1.25rem));  /* 18px */
   }
 }
 
@@ -307,24 +308,15 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 40rem;  /* 640px */
-  padding-left:  1rem;
-  padding-right: 1rem;
+  max-width: 730px;
   margin-left:  auto;
   margin-right: auto;
-}
-
-/* Medium Screens */
-@media (min-width: 38em) {
-  .container {
-    max-width: 32rem;
-  }
 }
 
 /* Large Screens */
 @media (min-width: 56em) {
   .container {
-    max-width: 40rem;  /* 640px */
+    max-width: 730px;  /* rem * 16 = px */
   }
 }
 
