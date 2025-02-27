@@ -4,7 +4,7 @@ title: "Computing QR Decomposition with Householder Vectors"
 date: "2025-02-25 16:06 -0500"
 categories: [numerical methods, linear algebra]
 tags: python matlab sparse
-reading_time: 18
+reading_time: 11
 excerpt: How do we compute the QR decomposition of a sparse matrix? I explore
     the differences between two methods of how to compute Householder vectors
     in Python and C++.

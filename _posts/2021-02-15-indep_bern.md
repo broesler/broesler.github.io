@@ -4,7 +4,7 @@ title:  "Tests of Independence: Part 1 – Bernoulli Random Variables"
 date:   "2021-02-15 16:21:56 -0500"
 categories: statistics
 tags: statistics hypothesis-testing python
-reading_time: 29
+reading_time: 31
 ---
 
 <p class="message">
